@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "films",
+  "info": {
+    "singularName": "film",
+    "pluralName": "films",
+    "displayName": "Film",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "backdrop_path": {
+      "type": "string"
+    },
+    "cover_path": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mm_name": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "released_date": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "overview": {
+      "type": "richtext"
+    },
+    "genres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::genre.genre"
+    },
+    "tv_show": {
+      "type": "boolean",
+      "default": false
+    },
+    "download_link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::download-link.download-link"
+    }
+  }
+}

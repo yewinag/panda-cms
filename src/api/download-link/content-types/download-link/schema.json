@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "download_links",
+  "info": {
+    "singularName": "download-link",
+    "pluralName": "download-links",
+    "displayName": "download-link"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "download_id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
